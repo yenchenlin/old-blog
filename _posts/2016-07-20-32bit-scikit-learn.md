@@ -13,31 +13,31 @@ Sometimes you may want to know how scikit-learn behaves when it's running on 32-
 
 Below I'll go through the procedure step by step:
 
-1. Type the following command and make sure it outputs `2147483647`.
+**I.** Type the following command and make sure it outputs `2147483647`.
 
-	```
-	arch -32 /System/Library/Frameworks/Python.framework/Versions/2.7/bin/python -c "import sys; print sys.maxint"
-	```
+```
+arch -32 /System/Library/Frameworks/Python.framework/Versions/2.7/bin/python -c "import sys; print sys.maxint"
+```
 
-2. Modify **line 5** of `Makefile` exists in root directory of scikit-learn becomes: 
+**II.** Modify *line 5* of `Makefile` exists in root directory of scikit-learn becomes: 
 
-	```
-	PYTHON ?= arch -32 /System/Library/Frameworks/Python.framework/Versions/2.7/bin/python
-	```
+```
+PYTHON ?= arch -32 /System/Library/Frameworks/Python.framework/Versions/2.7/bin/python
+```
 	
-	and modify **line 11** to:
+    and modify *line 11* to:
 	
-	```
-	BITS := $(shell PYTHON -c 'import struct; print(8 * 	struct.calcsize("P"))')
-	```
+```
+BITS := $(shell PYTHON -c 'import struct; print(8 * 	struct.calcsize("P"))')
+```
 
-3. Type
+**III.** Type
 
-	```
-	sudo make
-	```
+```
+sudo make
+```
 	
-	in the root directory of scikit-learn and you are good to go!
+in the root directory of scikit-learn and you are good to go!
 
 ## Verification
 
