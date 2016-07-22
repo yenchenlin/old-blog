@@ -1,9 +1,10 @@
 ---
 layout: post
 title:  "Using Function Pointer to Maximize Code Reusability in Cython"
-date:   2016-07-20 18:52:21 -0500
+date:   2016-07-17 18:52:21 -0500
 categories: GSoC
 comments: true
+excerpt: "An must know tip to make Cython more powerful."
 ---
 
 When writing C, function pointer is extremely useful because it can help us define a **callback** function, i.e., **a way to parametrize a function**. This means that some part of the function behavior is not hard-coded into itself, but into the callback function provided by user. Callers can make function behave differently by passing different callback functions. A classic example is `qsort()` from the C standard library that takes its sorting criterion as a pointer to a comparison function.

@@ -1,9 +1,10 @@
 ---
 layout: post
 title:  "How to set up 32bit scikit-learn on Mac without additional installation "
-date:   2016-07-17 18:52:21 -0500
+date:   2016-07-20 18:52:21 -0500
 categories: GSoC
 comments: true
+excerpt: "A note for people who want to reproduce 32bit environment on mac."
 ---
 
 Sometimes you may want to know how scikit-learn behaves when it's running on 32-bit Python. This blog post try to give the simplest solution.

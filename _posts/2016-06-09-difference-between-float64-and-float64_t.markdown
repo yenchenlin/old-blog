@@ -4,6 +4,7 @@ title:  "Difference between np.float64 & np.float64_t"
 date:   2016-06-08 18:52:21 -0500
 categories: GSoC
 comments: true
+excerpt: "I will discuss the a common question when reading Cython code."
 ---
 
 If you are a newcomer to Cython just like me, it is probably that you will be confused by the usage time of `np.float64_t` and `np.float64`.
