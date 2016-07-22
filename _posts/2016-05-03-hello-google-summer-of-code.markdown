@@ -4,7 +4,7 @@ title:  "Hello Google Summer of Code!"
 date:   2016-05-02 18:52:21 -0500
 categories: GSoc
 comments: true
-excerpt: "I will participate Google Summer of Code this year with scikit-learn"
+excerpt: "Google Summer of Code this year with scikit-learn."
 ---
 ![](https://musescore.org/sites/musescore.org/files/Capture%20d'e%CC%81cran%202016-03-01%2009.48.11.png)
 

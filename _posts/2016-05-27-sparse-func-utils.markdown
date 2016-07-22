@@ -4,7 +4,7 @@ title:  "scikit-learn Sparse Utils Now Support Fused Types"
 date:   2016-05-27 18:52:21 -0500
 categories: GSoC
 comments: true
-excerpt: "I will talk about what I learn by making sparse utils in scikit-learn support Cython fused types."
+excerpt: "What I learn by making sparse utils in scikit-learn support Cython fused types."
 ---
 
 Dealing with sparse data is fairly common when we are anlyzing large datasets. However, sparse function utilities in scikit-learn only support `float64` currently and will therefore implicitly convert other input data types, e.g., `float32`, into `float64`, which may cause unexpected memory error. Since [Cython fused types](http://docs.cython.org/src/userguide/fusedtypes.html) allow us to have one type definition that can refer to multiple types, we can solve potential memory wasting issue by substituting `float64` with Cython fused types.
