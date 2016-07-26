@@ -44,15 +44,14 @@ Before we can use these magic Cython commands, we first need to tell IPython to 
 Great! Now we can use Cython from IPython via the `%%cython` magic command:
 
 ```
-%%cython
-In [2]: cdef int add(int x, int y):
-			return x + y 
+In [2]: %%cython
+        cdef int add(int x, int y):
+            return x + y 
 ```
 
 The `%%cython` magic command allows us to write a block of Cython code directly in the IPython interpreter. After exiting the block with two returns, IPython will take the Cython code we defined, paste it into a uniquely named Cython source file, and compile it into an extension module. If compilation is successful, IPython will import everything from that module to make the function we defined available in the IPython interactive namespace. The compilation pipeline is still in effect, but it is all done for us **automatically**.We can now call the function we just defined:
 
 ```
-%%cython
 In [3]: add(1, 2)
 ```
 
