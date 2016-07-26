@@ -192,7 +192,7 @@ __pyx_v_add_one = add_one_double;
 
 which directly assigns function pointer to the correct imported function.
 
-In fact, this direct assignment is an optimization performed by C compiler since it can identify variables that remain unchanged within a function. It would find out that function pointer `__pyx_v_add_one` is only set once to a constant, i.e., an imported C function. Hence after object code is linked, `__pyx_v_add_one ` will directly be assigned to the C function.
+In fact, this allows for an optimization by the C compiler since it can identify variables that remain unchanged within a function. It would find out that function pointer `__pyx_v_add_one` is only set once to a constant, i.e., an imported C function. Hence after object code is linked, `__pyx_v_add_one ` will directly be assigned to the C function.
 
 On the contrary, Python interpreter can provides only little in static analysis and code optimization since the language design doesn't have the *compile* phase.
 
