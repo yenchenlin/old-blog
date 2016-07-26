@@ -23,7 +23,7 @@ At first, let's see what [IPython notebooks](http://ipython.org/) is.
 
 An IPython notebook is a powerful interactive shell, which lets you write and execute Python code in your web browser. Therefore, it is very convenient to tweak your code and execute it in bits and pieces with IPython. Besides that, it also has great support for interactive data visualization and use of [GUI toolkits](http://ipython.org/ipython-doc/stable/interactive/reference.html#gui-event-loop-support). For these reasons, IPython notebooks are widely used in scientific computing.
 
-For more installation details and tutorials, please see [this site](http://cs231n.github.io/ipython-tutorial/)
+For more installation details and tutorials, please see [this site](http://cs231n.github.io/ipython-tutorial/).
 
 ## Cython Problem
 
@@ -58,7 +58,7 @@ In [3]: add(1, 2)
 Cool! Now IPython will print the result of your function, i.e., 3, under this block of code.
 
 ## Generated C code
-Sometimes, it is a good practice to inspect the generated C source files to check the sanity of our program. It is located in the `$IPYTHONDIR/cython` directory (`~/.ipython/cython` on an OS X or *nix system). The module names are not easily readable because they are formed from the md5 hash of the Cython source code, but all the contents are there.
+Sometimes, it is a good practice to inspect the generated C source files to check the sanity of our program. The generated source files are located in the `$IPYTHONDIR/cython` directory (`~/.ipython/cython` on an OS X or *nix system). The module names are not easily readable because they are formed from the md5 hash of the Cython source code, but all the contents are there.
 
 ## Summary
 
