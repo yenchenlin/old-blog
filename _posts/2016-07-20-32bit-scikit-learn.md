@@ -25,7 +25,7 @@ arch -32 /System/Library/Frameworks/Python.framework/Versions/2.7/bin/python -c 
 PYTHON ?= arch -32 /System/Library/Frameworks/Python.framework/Versions/2.7/bin/python
 ```
 	
-    and modify *line 11* to:
+and modify *line 11* to:
 	
 ```
 BITS := $(shell PYTHON -c 'import struct; print(8 * 	struct.calcsize("P"))')
