@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Workaround to use fused types class attributes"
-date:   2016-07-17 18:52:21 -0500
+date:   2016-08-08 18:52:21 -0500
 categories: Deep Learning
 comments: true
 excerpt: "This tutorial will explain what Spatial Transformer is with **very accessible math**."
