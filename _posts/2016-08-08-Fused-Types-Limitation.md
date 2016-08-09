@@ -4,7 +4,7 @@ title:  "Workaround to use fused types class attributes"
 date:   2016-08-08 18:52:21 -0500
 categories: Deep Learning
 comments: true
-excerpt: "This tutorial will explain what Spatial Transformer is with **very accessible math**."
+excerpt: "This post will introduce a workaround to push Cython's limitation."
 ---
 
 In some of my previous blog posts , we've seen Cython fused types' ability to dramatically reduce both [memory usage](http://blog.yclin.me/gsoc/2016/06/27/KMeans/) and [code duplication]([Using Function Pointer to Maximize Code Reusability in Cython](http://blog.yclin.me/gsoc/2016/07/17/Function-Pointer/)).
